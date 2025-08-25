@@ -1,3 +1,6 @@
+#ifndef TEST_H
+#define TEST_H
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -47,3 +50,5 @@ static inline void test_print_results() {
 		printf("\033[31m[%lu ASSERTS FAILED]\033[0m\n", g_failed);
 	}
 }
+
+#endif
