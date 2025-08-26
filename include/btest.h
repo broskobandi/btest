@@ -66,7 +66,7 @@ extern unsigned long g_failed;
 #endif
 
 /** Prints the test results. */
-static inline void test_print_results() {
+static inline void btest_print_results() {
 	if (!g_failed) {
 		printf("\n\033[32m[ALL %lu ASSERTS PASSED]\033[0m\n", g_asserts);
 	} else {

@@ -7,14 +7,14 @@ A simple test utility for your C projects.
 
 ## Installation
 ```bash
-git clone git@github.com:broskobandi/test.git &&
-cd test &&
+git clone git@github.com:broskobandi/btest.git &&
+cd btest &&
 sudo make install
 ```
 
 ## Uninstallation
 ```bash
-cd test &&
+cd btest &&
 sudo make uninstall
 ```
 

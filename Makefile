@@ -1,5 +1,5 @@
 INSTALL_DIR := /usr/local/include
-INC := include/test.h
+INC := include/btest.h
 
 all:
 
