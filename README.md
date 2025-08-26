@@ -1,4 +1,4 @@
-# test
+# btest
 A simple test utility for your C projects.
 
 ## Features
@@ -25,7 +25,7 @@ sudo make uninstall
 // TEST_EXIT_ON_FAILURE
 
 // Include the header
-#include <test.h>
+#include <btest.h>
 
 // Initialize global variables
 TEST_INIT;
@@ -49,7 +49,7 @@ int main(void) {
     ASSERT(quotient == 0.0f);
 
     // Print the results
-    test_print_results();
+    btest_print_results();
     return 0;
 }
 ```
