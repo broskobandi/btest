@@ -44,7 +44,7 @@ extern unsigned long g_failed;
 #ifdef BTEST_EXIT_ON_FAILURE
 /** \brief Tests a condition and updates global variables. 
  * Prints information about the failed condition and exits the program on failure. */
-#define ASSERT(expr)\
+#define BASSERT(expr)\
 	if (!(expr)) {\
 		printf("\033[31m[ASSERT FAILED]:\033[0m %s\n\tFile: %s\n\tLine: %d\n", #expr, __FILE__, __LINE__);\
 		exit(1);\
