@@ -36,12 +36,12 @@ extern unsigned long g_passed;
 extern unsigned long g_failed;
 
 /** Initializes global variables. */
-#define TEST_INIT\
+#define BTEST_INIT\
 	unsigned long g_asserts;\
 	unsigned long g_failed;\
 	unsigned long g_passed;\
 
-#ifdef TEST_EXIT_ON_FAILURE
+#ifdef BTEST_EXIT_ON_FAILURE
 /** \brief Tests a condition and updates global variables. 
  * Prints information about the failed condition and exits the program on failure. */
 #define ASSERT(expr)\
@@ -55,7 +55,7 @@ extern unsigned long g_failed;
 #else
 /** \brief Tests a condition and updates global variables. 
  * Prints information about the failed condition on failure. */
-#define ASSERT(expr)\
+#define BASSERT(expr)\
 	if (!(expr)) {\
 		printf("\033[31m[ASSERT FAILED]:\033[0m %s\n\tFile: %s\n\tLine: %d\n", #expr, __FILE__, __LINE__);\
 		g_failed++;\
