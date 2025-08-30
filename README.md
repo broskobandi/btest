@@ -1,4 +1,4 @@
-# btest
+# test
 A simple test utility for your C projects.
 
 ## Features
@@ -7,14 +7,14 @@ A simple test utility for your C projects.
 
 ## Installation
 ```bash
-git clone git@github.com:broskobandi/btest.git &&
-cd btest &&
+git clone git@github.com:broskobandi/test.git &&
+cd test &&
 sudo make install
 ```
 
 ## Uninstallation
 ```bash
-cd btest &&
+cd test &&
 sudo make uninstall
 ```
 
@@ -25,7 +25,7 @@ sudo make uninstall
 // TEST_EXIT_ON_FAILURE
 
 // Include the header
-#include <btest.h>
+#include <test.h>
 
 // Initialize global variables
 TEST_INIT;
@@ -49,7 +49,7 @@ int main(void) {
     ASSERT(quotient == 0.0f);
 
     // Print the results
-    btest_print_results();
+    test_print_results();
     return 0;
 }
 ```
