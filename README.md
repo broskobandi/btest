@@ -20,17 +20,17 @@ sudo make uninstall
 
 ## Usage
 ```c
-//// Optional: Add this line before including the header 
-//// if you want to exit the test on a failed assertion.
-// TEST_EXIT_ON_FAILURE
+/*Optional: Add this line before including the header
+ * if you want to exit the test on a failed assertion. */
+/* TEST_EXIT_ON_FAILURE */
 
-// Include the header
+/* Include the header. */
 #include <test.h>
 
-// Initialize global variables
+/* Initialize global variables. */
 TEST_INIT;
 
-// Example function to test
+/* Example function to test. */
 int divide(int dividend, int divisor, float *quotient) {
     if (divisor == 0) return 1;
     *quotient = (float)((float)dividend / (float)divisor);
@@ -38,17 +38,17 @@ int divide(int dividend, int divisor, float *quotient) {
 }
 
 int main(void) {
-    // Normal case
+    /* Normal case. */
     float quotient = 0;
     ASSERT(divide(10, 2, &quotient) == 0);
     ASSERT(quotient == 5.0f);
 
-    // Edge case
+    /* Edge case. */
     quotient = 0;
     ASSERT(divide(10, 0, &quotient) == 1);
     ASSERT(quotient == 0.0f);
 
-    // Print the results
+    /* Print the results. */
     test_print_results();
     return 0;
 }
